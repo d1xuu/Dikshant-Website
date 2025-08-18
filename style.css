@@ -307,7 +307,7 @@ section {
   gap: 2rem;
   margin: 2rem auto;
   width: 70%;
-  max-width: 800px;
+  max-width: 700px;
 }
 
 .article-container {
@@ -419,4 +419,34 @@ footer p {
   position: absolute;
   bottom: -2rem;   /* shift lower */
   right: 1rem;
+}
+/* === MOBILE RESPONSIVENESS === */
+@media (max-width: 768px) {
+  section {
+    margin: 0 2rem;   /* reduce side margins */
+  }
+
+  .details-container,
+  .experience-details-container,
+  .color-container {
+    width: 100%;      /* take full width */
+    max-width: 100%;
+  }
+
+  #profile {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    height: auto;
+  }
+
+  .section__pic-container {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .section__text {
+    height: auto;
+  }
 }
