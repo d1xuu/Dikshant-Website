@@ -429,7 +429,7 @@ footer p {
   .details-container,
   .experience-details-container,
   .color-container {
-    width: 100%;      /* take full width */
+    width: 80%;      /* take full width */
     max-width: 100%;
   }
 
@@ -441,8 +441,8 @@ footer p {
   }
 
   .section__pic-container {
-    width: 250px;
-    height: 250px;
+    width: 500px;
+    height: 500px;
     margin: 0 auto;
   }
 
