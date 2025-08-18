@@ -427,9 +427,13 @@ footer p {
   }
 
   .details-container,
-  .experience-details-container,
   .color-container {
     width: 80%;      /* take full width */
+    max-width: 100%;
+  }
+
+  .experience-details-container {
+    width: 95%;      /* take full width */
     max-width: 100%;
   }
 
