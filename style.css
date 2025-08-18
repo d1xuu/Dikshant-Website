@@ -1,5 +1,4 @@
 /* GENERAL */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
@@ -20,14 +19,12 @@ p {
 }
 
 /* TRANSITION */
-
 a,
 .btn {
   transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
-
 nav,
 .nav-links {
   display: flex;
@@ -67,7 +64,6 @@ a:hover {
 }
 
 /* HAMBURGER MENU */
-
 #hamburger-nav {
   display: none;
 }
@@ -147,13 +143,11 @@ a:hover {
 }
 
 /* SECTIONS */
-
 section {
   padding-top: 4vh;
-  height: 96vh;
+  min-height: 96vh; /* allow growth instead of fixed height */
   margin: 0 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
 }
 
 .section-container {
@@ -161,11 +155,10 @@ section {
 }
 
 /* PROFILE SECTION */
-
 #profile {
   display: flex;
   justify-content: center;
-  align-items: centerart;
+  align-items: center;
   gap: 8rem;
   height: 80vh;
 }
@@ -178,9 +171,11 @@ section {
   margin-top: 10px; 
   margin-left: 50px; 
 }
+
 .section__pic-container img {
   margin-top: 0px;
 }
+
 .section__text {
   align-self: center;
   text-align: center;
@@ -213,14 +208,12 @@ section {
 }
 
 /* ICONS */
-
 .icon {
   cursor: pointer;
   height: 2rem;
 }
 
 /* BUTTONS */
-
 .btn-container {
   display: flex;
   justify-content: center;
@@ -279,6 +272,7 @@ section {
   gap: 2rem;
   margin: 2rem auto;
   align-items: center;
+  justify-content: center;
 }
 
 .details-container {
@@ -291,7 +285,6 @@ section {
   border: rgb(163, 163, 163) 0.1rem solid;
   text-align: center;
 }
-
 
 /* EXPERIENCE SECTION */
 #experience {
@@ -309,7 +302,8 @@ section {
 .experience-details-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* ✅ center horizontally */
+  justify-content: center;
   gap: 2rem;
   margin: 2rem auto;
   width: 90%;
@@ -370,7 +364,6 @@ article .icon {
 }
 
 /* CONTACT */
-
 #contact {
   display: flex;
   justify-content: center;
@@ -410,7 +403,6 @@ article .icon {
 }
 
 /* FOOTER SECTION */
-
 footer {
   height: 26vh;
   margin: 0 1rem;
@@ -418,4 +410,13 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* === ARROW FIXES === */
+#about .arrow,
+#experience .arrow,
+#projects .arrow {
+  position: absolute;
+  bottom: -2rem;   /* shift lower */
+  right: 1rem;
 }
